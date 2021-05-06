@@ -22,7 +22,7 @@ setTimeout(function () {
   for (var i = 1; i <= simonChoices; i++) {
     do {
       var choice = parseInt(prompt("What did Simon say?\nNumber: " + i));
-    } while (isNaN(choice));
+    } while (isNaN(choice) || isInArray(choice, userChoice));
     userChoice.push(choice);
   }
 
