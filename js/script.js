@@ -35,8 +35,14 @@ setTimeout(function () {
   setTimeout(function () {
     if (correctChoices.length == 0) {
       alert("Correct numbers: 0!");
+    } else {
+      alert(
+        "Correct numbers: " +
+          correctChoices.length +
+          "!\nGuessed: " +
+          joinArray(correctChoices)
+      );
     }
-    alert("Correct numbers: " + joinArray(correctChoices));
   }, 1000);
 }, 30000);
 
